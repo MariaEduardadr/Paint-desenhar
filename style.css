@@ -1,31 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #d8d8e1;
 }
 
-canvas{
-    background-color: white; 
+canvas {
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.cotainer{
+.container {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-.tool--box{
+
+.tool-box {
     width: 110px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-left: 40px;
     padding: 10px;
     display: flex;
@@ -34,7 +35,8 @@ canvas{
     margin-bottom: 20px;
 }
 
-.button--tol, .button--size{
+.button__tool,
+.button__size {
     height: 45px;
     border: none;
     border-radius: 5px;
@@ -45,55 +47,56 @@ canvas{
     background: none;
 }
 
-.button--tool > span{
+.button__tool > span {
     font-size: 1.8rem;
 }
 
-.button--tool:hover, .button--size{
+.button__tool:hover,
+.button__size:hover {
     background-color: #f2f2f2;
 }
 
-.input--color{
+.input__color {
     width: 45px;
     height: 45px;
     border: none;
-    background-color: #d8d8e1;
+    background: none;
     cursor: pointer;
     padding: 5px 7px;
 }
 
-.input--color::-webkit-color-swatch{
+.input__color::-webkit-color-swatch {
     border-radius: 100px;
 }
 
-.button--size{
+.button__size {
     padding: 10px;
     height: auto;
 }
 
-.button--size > span{
+.button__size > span {
     width: 100%;
     background-color: #000;
     border-radius: 100px;
     display: block;
 }
 
-.button--size[data-size="5"] > span{
+.button__size[data-size="5"] > span {
     height: 5px;
-    background-color: #000;
 }
-.button--size[data-size="10"] > span{
+
+.button__size[data-size="10"] > span {
     height: 10px;
-    background-color: #000;
 }
-.button--size[data-size="20"] > span{
+
+.button__size[data-size="20"] > span {
     height: 20px;
-    background-color: #000;
 }
-.button--size[data-size="30"] > span{
+
+.button__size[data-size="30"] > span {
     height: 30px;
-    background-color: #000;
 }
+
 .active {
     background-color: #f2f2f2;
 }
